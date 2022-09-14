@@ -4,9 +4,9 @@ Save all the following files in the same directory
 
 Data:
 	
-	-glove.bin--Baseline GloVe word vectors from Pennington et al
+	-glove_model.bin--Baseline GloVe word vectors from Pennington et al
 	
-	-crawl-300d-2M-subword.bin--FastText word vectors 
+	-ft_model.bin--FastText word vectors 
 	
 	-stop_words.csv--List of stop words to be read in for text cleaning
 	
