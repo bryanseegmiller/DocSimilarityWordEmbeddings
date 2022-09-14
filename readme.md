@@ -4,7 +4,7 @@ Save all the following files in the same directory
 
 Data:
 	
-	-glove_model.bin--Baseline GloVe word vectors from Pennington et al
+	-glove_model.bin--Baseline GloVe word vectors from Pennington et al (only includes word vectors for terms showing up in final cleaned occupation tasks) 
 	
 	-ft_model.bin--FastText word vectors 
 	
