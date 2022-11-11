@@ -19,7 +19,7 @@ from "Employer Concentration and Outside Options" by Schubert, Stansbury, and Ta
 	
  * ONETOccupationSimilarities.py: Python script that cleans and prepares tasks statements, creates numerical representations of documents, 
 	 and creates occupation-by-occupation task similarities. Outputs them to Stata datasets. 
- * SimilarityOccupationFlows.do--Reads in output from ONETOccupationSimilarities.py and uses it to predict worker occupation-to-occupation flows. Prints tables 3 and 4 of paper 
+ * SimilarityOccupationFlows.do--Reads in output from ONETOccupationSimilarities.py and uses it to predict worker occupation-to-occupation flows. Prints tables 3 and 4 of paper. 
 		Requires a few additional Stata packages. See comment at top of script if not already installed
 
 #### Notes: 
@@ -35,7 +35,8 @@ Gensim version 4.1.2 was used (see requirements.txt), but script should work wit
 for each NAICS code,including patent names and numbers and 4-digit NAICS titles
 
  * naics_descriptions.csv--Original NAICS descriptions that we scraped from the NAICSmanual website: https://www.census.gov/naics/?58967?yearbck=2012. We defined NAICS at the 
-4-digit level and combine the fields "naics6_text", "naics5_text", "naics4_text" (as available), along with "naics4_title" to create one document for each 4-digit naics code.  Not read in directly by any replication scripts. 
+4-digit level and combine the fields "naics6_text", "naics5_text", "naics4_text" (as available), along with "naics4_title" to create one document for each 4-digit naics code.  
+Not read in directly by any replication scripts, but included because descriptions may have changed slightly since we scraped them. 
 
 #### Scripts:
  * NAICSPatentSimilarityTable.do--Run to replicate each panel of Table 2. 
