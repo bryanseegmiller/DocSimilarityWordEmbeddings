@@ -35,8 +35,7 @@ Gensim version 4.1.2 was used (see requirements.txt), but script should work wit
 for each NAICS code,including patent names and numbers and 4-digit NAICS titles
 
  * naics_descriptions.csv--Original NAICS descriptions that we scraped from the NAICSmanual website: https://www.census.gov/naics/?58967?yearbck=2012. We defined NAICS at the 
-4-digit level and combine the fields "naics6_text", "naics5_text", "naics4_text" (as available), along with "naics4_title" to create one document for each 4-digit naics code.  
-Not read in directly by any replication scripts, but included because descriptions may have changed slightly since we scraped them. 
+4-digit level and combine the fields "naics6_text", "naics5_text", "naics4_text" (as available), along with "naics4_title" to create one document for each 4-digit naics code.  Not read in directly by any replication scripts, but included because descriptions may have changed slightly since we scraped them. 
 
 #### Scripts:
  * NAICSPatentSimilarityTable.do--Run to replicate each panel of Table 2. 
