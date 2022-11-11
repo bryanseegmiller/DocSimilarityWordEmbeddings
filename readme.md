@@ -22,9 +22,10 @@ from "Employer Concentration and Outside Options" by Schubert, Stansbury, and Ta
  * SimilarityOccupationFlows.do--Reads in output from ONETOccupationSimilarities.py and uses it to predict worker occupation-to-occupation flows. Prints tables 3 and 4 of paper 
 		Requires a few additional Stata packages. See comment at top of script if not already installed
 
-Notes: 
-	-ONETOccupationSimilarities.py was created using Python 3.9.12, but should work with Python >= 3.6.0
-         Gensim version 4.1.2 was used (see requirements.txt), but script should work with Gensim >= 4.0.0 
+#### Notes: 
+
+ONETOccupationSimilarities.py was created using Python 3.9.12, but should work with Python >= 3.6.0
+Gensim version 4.1.2 was used (see requirements.txt), but script should work with Gensim >= 4.0.0 
 
 ### For reproducing Table 2
 
@@ -40,13 +41,13 @@ for each NAICS code,including patent names and numbers and 4-digit NAICS titles
  * NAICSPatentSimilarityTable.do--Run to replicate each panel of Table 2. 
 
 
-##### NOTES:
+##### Notes:
 
 As the data are too large, we don't include the raw patent texts. We instead provide
 a dataset with the top 100 patents for each NAICS code, which allows one to replicate Table 2
 and to examine additional examples. 
 
 Data for Figure 1 and Table 1 come from "Technology-Skill Complementarity and Labor Displacement:
-Evidence from Linking Patents Occupations", 2021 by Kogan, Papanikolaou, Schmidt, and Seegmiller, 
+Evidence from Linking Patents Occupations", by Kogan, Papanikolaou, Schmidt, and Seegmiller (2021), 
 and are not included here. 
 
